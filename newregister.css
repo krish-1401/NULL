@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .register{
     background-color: #a5def1;
     background-image: linear-gradient(43deg, #a5def1 33%, #36506c 66%, #233142 99%);
@@ -101,7 +106,9 @@
     color: #495057;
 }
 .have-acc{
-    margin-left: 250px;
+    position: absolute;
+    right: 80px;
+    bottom: -40px;
     color: #36506c;
 }
 .left-data{
