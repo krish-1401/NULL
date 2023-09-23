@@ -12,28 +12,32 @@
     />
   </head>
   <body>
+    <img src="Polygon 3.png" alt="" class="bg1">
+    <img src="background copy.png" alt="" class="bg2">
     <div class="desktop-1">
-      <img class="desktop-1-child" alt="" src="polygon-1.svg" />
+      <!-- <img class="desktop-1-child" alt="" src="polygon-1.svg" /> -->
 
-      <b class="investors">INVESTORS</b>
+      <b class="investors" style="z-index: 5;">INVESTORS</b>
       <img class="desktop-1-item" alt="" src="rectangle-1.svg" />
 
       
       
       <div class="data-show">
         <div class="investor">
-          <img class="img-of-inv" alt="" src="vector1.svg" />
-          <h3>P1</h3>
-          <h5>Amount-> &nbsp;10000</h5>
-          <h5>Rate of Interest-> 5%</h5>          
+          <img class="img-of-inv" alt="" src="vector1.svg" style="z-index: 5;" />
+          <h3 style="z-index: 5;">Arjun Tyagi</h3>
+          <h5 style="z-index: 5;">Amount-> &nbsp;10000</h5>
+          <h5 style="z-index: 5;">Rate of Interest-> 5%</h5>          
           <div class="sel-plain"></div>
           <button class="sel">
-            <img class="selected" alt="" src="selected.png" />
+            <img class="selected" alt="" src="selected3.png" />
           </button>
-          <a href="success.html" class="no-underline">
-            <button class="proceed1">Proceed</button>
-          </a>
-        </div>
+          <button class="proceed1">
+              <a href="success.html" class="no-underline">
+              Proceed
+            </a>
+            </button>
+        </div>  
       </div>
       
       <div class="rectangle-parent1">
@@ -41,9 +45,9 @@
           <input  type="number" class="rectangle-textarea price-filter" placeholder="Filter According to Price"></input>
         </div>
 
-        <button class="submit-filter-btn">Add Filter</button>
+        <button class="submit-filter-btn" style="z-index: 5; cursor: pointer;">Add Filter</button>
       </div>
-      <div class="choose-from-the">
+      <div class="choose-from-the" style="z-index: 5;">
         Choose from the best of investors we have to offer.
       </div>
     </div>
@@ -55,25 +59,3 @@
 
 
 
-<!-- <div class="part1">
-  <p>Password Length</p>
-  <p class="pwd_length">0</p>
-</div>
-<input type="range" min="1" max="20" class="slider" step="1"> -->
-
-
-
-<!-- 
-const inputslider=document.querySelector('.slider');
-const lengthdisplay=document.querySelector('.pwd_length');
-//set password length
-function handleslider(){
-    inputslider.value=passwordlength;
-    lengthdisplay.innerText=passwordlength;
-}
-handleslider();
-
-inputslider.addEventListener('input',(e)=>{
-  passwordlength=e.target.value;
-  handleslider();
-}) -->
