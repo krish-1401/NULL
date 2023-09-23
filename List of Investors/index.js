@@ -1,19 +1,42 @@
-let clicker=document.getElementsByClassName("vector-wrapper");
-let green=document.getElementsByClassName("sel");
-let proceed=document.getElementsByClassName("proceed");
-clicker[0].addEventListener('click',()=>{
-    console.log("hi");
-    // if(clicker[0].style.display==='block'){
-        clicker[0].style.display='none';
-        // clicker[0].style.visibility='hidden';
-        green[0].style.display='block';
-        proceed[0].style.display='block';
-    // }
-})
-green[0].addEventListener('click',()=>{
-    if(clicker[0].style.display==='none'){
-        clicker[0].style.display='block';
-        green[0].style.display='none';
-        proceed[0].style.display='none';
-    }
+// let clicker = document.querySelector(".sel-plain");
+// let green_box=document.querySelector(".sel")
+// let green = document.querySelector(".selected");
+// let proceed = document.querySelector(".proceed1");
+// clicker.addEventListener('click', () => {
+//     clicker.style.display = 'none';
+//     green.style.display = 'block';
+//     green_box.style.display = 'block';
+//     proceed.style.display = 'block';
+//     proceed.style.cursor = 'pointer';
+// })
+// green.addEventListener('click', () => {
+//     if (clicker.style.display === 'none') {
+//         clicker.style.display = 'block';
+//         green.style.display = 'none';
+//         green_box.style.display = 'none';
+//         proceed.style.display = 'none';
+//     }
+// })
+
+let investors=document.querySelectorAll(".investor");
+investors.forEach(investor=>{
+    let clicker = investor.querySelector(".sel-plain");
+    let green_box=investor.querySelector(".sel")
+    let green = investor.querySelector(".selected");
+    let proceed = investor.querySelector(".proceed1");
+    clicker.addEventListener('click', () => {
+            clicker.style.display = 'none';
+            green.style.display = 'block';
+            green_box.style.display = 'block';
+            proceed.style.display = 'block';
+            proceed.style.cursor = 'pointer';
+        })
+        green.addEventListener('click', () => {
+            if (clicker.style.display === 'none') {
+                clicker.style.display = 'block';
+                green.style.display = 'none';
+                green_box.style.display = 'none';
+                proceed.style.display = 'none';
+            }
+        })
 })
